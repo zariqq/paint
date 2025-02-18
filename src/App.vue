@@ -2,6 +2,7 @@
 import Hero from '@/components/Hero.vue';
 import Header from '@/components/Header.vue';
 import Pillow from '@/uis/Pillow.vue';
+import Button from '@/uis/Button.vue';
 </script>
 
 <template>
@@ -9,5 +10,7 @@ import Pillow from '@/uis/Pillow.vue';
         <Header></Header>
         <Hero></Hero>
         <Pillow>Hellow</Pillow>
+        <Button>Hellow</Button>
+
     </main>
 </template>

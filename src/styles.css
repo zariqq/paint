@@ -1,9 +1,11 @@
 @import url(/font/stylesheet.css);
 
 body {
-    margin: 0;
     --main-bg-color: #FEEDBC;
     --dark: #262626;
+    --yellow: #F9B800;
+
+    margin: 0;
     background-color: var(--main-bg-color);
     color: var(--dark);
     font-family: 'Segoe UI';
@@ -11,6 +13,11 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+button {
+    border: none;
+    outline: none;
 }
 
 .content {
