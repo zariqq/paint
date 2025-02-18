@@ -1,0 +1,57 @@
+@import url(/font/stylesheet.css);
+
+body {
+    margin: 0;
+    --main-bg-color: #FEEDBC;
+    --dark: #262626;
+    background-color: var(--main-bg-color);
+    color: var(--dark);
+    font-family: 'Segoe UI';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    width: 83vw;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.header {
+    background-color: #FFF;
+    border-radius: 5000px;
+    height: 72px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 22px;
+    /* 16px 30px */
+    width: 100%;
+    height: 100%;
+}
+
+.header .balancer {
+    visibility: hidden;
+    margin-right: auto;
+    /* flex: 1; */
+}
+
+.header .logo {
+    height: 100%;
+    aspect-ratio: 95 / 47;
+}
+
+.header .change_lang {
+    /* flex: 1; */
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .header {}
+}
