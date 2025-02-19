@@ -23,7 +23,9 @@
     content: '';
     background-image: url(/check.svg);
     background-size: contain;
-    width: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 25px;
     height: 25px;
 }
 </style>
