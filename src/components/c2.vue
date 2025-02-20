@@ -1,35 +1,37 @@
 <script setup>
-
 const cards = [
     {
-        img_src: "/1.svg",
+        img_src: "1.svg",
         number: 1,
         header: "Phasellus Vitae",
         subheader: "Quisque",
         text: "Porttitor vitae vel amet"
     },
     {
-        img_src: "/2.svg",
+        img_src: "2.svg",
         number: 2,
         header: "Phasellus Vitae",
         subheader: "Quisque",
         text: "Porttitor vitae vel amet"
     },
     {
-        img_src: "/3.svg",
+        img_src: "3.svg",
         number: 3,
         header: "Phasellus Vitae",
         subheader: "Quisque",
         text: "Porttitor vitae vel amet"
     },
     {
-        img_src: "/4.svg",
+        img_src: "4.svg",
         number: 4,
         header: "Phasellus Vitae",
         subheader: "Quisque",
         text: "Porttitor vitae vel amet"
     }
 ];
+
+cards.forEach((c) => (c.img_src = import.meta.env.BASE_URL + c.img_src));
+console.log(cards);
 
 const cardStyle = {
     "--card-bg-color": "var(--yellow)",

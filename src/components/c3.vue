@@ -1,7 +1,3 @@
-<script setup>
-import Arrow from '@/uis/Arrow.vue';
-</script>
-
 <template>
     <section class="c3 container">
         <div class="c3__inner">
@@ -96,7 +92,7 @@ import Arrow from '@/uis/Arrow.vue';
     width: 100%;
     height: 100%;
     aspect-ratio: 1 / 1;
-    background-color: brown;
+    background-color: aqua;
     overflow: hidden;
 }
 
