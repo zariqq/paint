@@ -1,5 +1,4 @@
 <script setup>
-import Button from '@/uis/Button.vue';
 </script>
 
 <template>
@@ -44,21 +43,7 @@ import Button from '@/uis/Button.vue';
         "content";
 }
 
-@media (min-width: 576px) {
-    .c1__inner {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "heading heading"
-            "content img";
-    }
-}
 
-@media (min-width: 768px) {
-    .c1__inner {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "heading img"
-            "content img";
-    }
-}
 
 .c1__content {
     grid-area: content;
@@ -68,6 +53,12 @@ import Button from '@/uis/Button.vue';
 .c1__heading {
     grid-area: heading;
     align-self: end;
+}
+
+.c1__content,
+.c1__heading {
+    max-width: 500px;
+    justify-self: center;
 }
 
 .c1__img {
@@ -93,7 +84,28 @@ import Button from '@/uis/Button.vue';
     width: 100%;
     height: 100%;
 
+
     aspect-ratio: 1;
-    max-width: 714px;
+    max-width: 500px;
+}
+
+@media (min-width: 576px) {
+    .c1__inner {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "heading heading"
+            "content img";
+    }
+}
+
+@media (min-width: 768px) {
+    .c1__inner {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "heading img"
+            "content img";
+    }
+
+    .c1__content {
+        align-self: baseline;
+    }
 }
 </style>

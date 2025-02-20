@@ -1,3 +1,9 @@
+<script>
+export default {
+    name: 'Button'
+}
+</script>
+
 <template>
     <button class="button">
         <slot></slot>

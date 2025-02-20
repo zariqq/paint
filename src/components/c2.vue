@@ -1,6 +1,4 @@
 <script setup>
-import Button from '@/uis/Button.vue';
-import Card from '@/uis/Card.vue';
 
 const cards = [
     {
@@ -115,6 +113,10 @@ const cardStyle = {
 }
 
 @media (min-width: 768px) {
+    .c2 {
+        margin-bottom: 200px;
+    }
+
     .left {
         grid-template-columns: repeat(2, 1fr);
         gap: 60px;

@@ -1,7 +1,3 @@
-<script setup>
-import Arrow from '@/uis/Arrow.vue';
-</script>
-
 <template>
     <article class="user_feedback">
         <div class="profile_photo">

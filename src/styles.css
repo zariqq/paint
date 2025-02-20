@@ -5,6 +5,7 @@ body {
     --dark: #262626;
     --dark-12: rgba(38, 38, 38, .12);
     --yellow: #F9B800;
+    --light-white: #FFFAEB;
 
     --bounce: linear(0, 0.004, 0.016, 0.035, 0.063, 0.098, 0.141 13.6%, 0.25, 0.391, 0.563, 0.765,
             1, 0.891 40.9%, 0.848, 0.813, 0.785, 0.766, 0.754, 0.75, 0.754, 0.766, 0.785,
@@ -58,14 +59,32 @@ img {
     object-fit: cover;
 }
 
+a {
+    color: white;
+}
+
 .container {
-    /* width: 83vw; */
-    /* margin: 0 auto; */
     margin: 0 12px;
     max-width: 1600px;
-
+    width: 100%;
 }
 
 .main {
     margin-top: 10px;
+    padding-bottom: 40px;
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+}
+
+@media (min-width: 992px) {
+    .main {
+        gap: 140px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        gap: 170px;
+    }
 }

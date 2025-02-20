@@ -1,3 +1,9 @@
+<script>
+export default {
+    name: 'Card'
+}
+</script>
+
 <script setup>
 import { defineProps } from 'vue';
 
@@ -17,8 +23,7 @@ defineProps({
         },
         required: true
     }
-})
-
+});
 </script>
 
 <template>

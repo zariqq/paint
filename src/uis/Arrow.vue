@@ -1,3 +1,9 @@
+<script>
+export default {
+    name: 'Arrow'
+}
+</script>
+
 <template>
     <svg width="40" height="17" viewBox="0 0 40 17" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

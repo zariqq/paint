@@ -33,7 +33,6 @@ import Arrow from '@/uis/Arrow.vue';
 
 <style>
 .c3 {
-    margin-top: 200px;
     background-color: white;
     border-radius: 50px;
     padding: 40px 38px;
@@ -50,6 +49,7 @@ import Arrow from '@/uis/Arrow.vue';
 
 .c3__inner {
     display: flex;
+    width: 100%;
 }
 
 @media (max-width: 765px) {
@@ -59,11 +59,12 @@ import Arrow from '@/uis/Arrow.vue';
 }
 
 .user_feedback {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
     gap: 40px;
+    width: 100%;
 }
 
 .c3::after {
@@ -104,7 +105,9 @@ import Arrow from '@/uis/Arrow.vue';
     height: 100%;
 }
 
-.feedback {}
+.feedback {
+    max-width: 500px;
+}
 
 .feedback__text {
     margin: 20px 0;
@@ -133,6 +136,7 @@ import Arrow from '@/uis/Arrow.vue';
 @media (min-width: 768px) {
     .user_feedback {
         flex-direction: row;
+        grid-template-columns: 1fr 1fr;
     }
 
 }

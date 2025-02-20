@@ -1,12 +1,9 @@
-<script setup>
-import Pillow from '@/uis/Pillow.vue';
-import Button from '@/uis/Button.vue';
-</script>
 
 <template>
-    <section class="hero container">
+    <section class="hero">
         <div class="hero__inner">
-            <div class="up_text">risus praesent vulputate. </div>
+            <div class="up_text">risus praesent vulputate.
+            </div>
             <h1>Cursus Integer Consequat Tristique.</h1>
             <div class="pills">
                 <Pillow>Cursus Integer</Pillow>
@@ -53,5 +50,6 @@ import Button from '@/uis/Button.vue';
     text-transform: uppercase;
     color: var(--yellow);
     font-weight: bold;
+    position: relative;
 }
 </style>

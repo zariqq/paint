@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <header class="header container">
+    <header class="header">
         <div class="header__inner">
             <img src="/logo.svg" alt="Paint logo" class="logo" width="127" height="63" loading="lazy">
 

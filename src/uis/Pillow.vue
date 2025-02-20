@@ -1,3 +1,9 @@
+<script>
+export default {
+    name: 'Pillow'
+}
+</script>
+
 <template>
     <div class="pillow">
         <slot></slot>
@@ -6,7 +12,7 @@
 
 <style>
 .pillow {
-    background-color: var(--pillow-color, #FFF);
+    background-color: var(--pillow-bg-color, #FFF);
     padding: 7px 25px 7px 14px;
 
     display: flex;
@@ -17,6 +23,7 @@
     width: fit-content;
 
     font-weight: 600;
+    text-align-last: center;
 }
 
 .pillow::before {
